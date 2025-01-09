@@ -1,0 +1,4 @@
+member_id,recipient_name,email,url,flight_number,departure_city,arrival_city,date_of_flight,flight_date,cabin,PNR,city_of_departure,city_of_arrival
+188888888,Stephen D,test@asyst.co.id,,GA9999,CGK,SUB,31-Aug-24,31082024,E,QABCDE,Jakarta,Surabaya
+,First Last,asyst.test@gmail.com,,GA9997,SUB,CGK,31-Aug-24,31082024,E,QABCDF,Surabaya,Jakarta
+188888890,Atik W,test2@asyst.co.id,,GA9997,SUB,CGK,31-Aug-24,31082024,E,QABCDG,Surabaya,Jakarta

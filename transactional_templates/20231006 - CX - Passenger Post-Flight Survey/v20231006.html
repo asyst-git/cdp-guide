@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://survey-passenger.garuda-indonesia.com/assets/img/logo/favico32x32.png" />
+  <title>Survey Passenger Email</title>
+
+  <style>
+    body {
+        font-family: 'Tahoma', 'Verdana', 'Segoe' ,'sans-serif';
+        line-height: 1.6;
+        color: #333;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .image-header {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 10px;
+        padding: 0;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .container {
+        width: 60%;
+        margin: 0 auto;
+    }   
+
+    .header {
+        background-color: #002561;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .content {
+        padding: 20px;
+        background-color: #ffffff;
+        border: 1px solid #ced4da;
+        border-radius: 0px 0px 10px 10px;
+        margin-top: 0px;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 100px 20px 100px;
+    }
+
+    .label-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 100px 0px 100px;
+        color: #002561;
+    }
+
+    .left-label {
+        float: left;
+    }
+
+    .right-label {
+        float: right;
+    }
+
+    .blue-garuda {
+        color: #002561;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        .label-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+    }
+
+    /*Button rating default*/
+    .grey-button {
+        flex: 1;
+        display: inline-block;
+        padding: 10px 10px;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        background-color: #d3d3d3;
+        color: #ffffff;
+        cursor: pointer;
+        position: relative;
+        margin: 5px;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .button1 { background: hsla(210, 17%, 80%, 1); }
+    .button2 { background: hsla(210, 16%, 75%, 1); }
+    .button3 { background: hsla(210, 14%, 70%, 1); }
+    .button4 { background: hsla(210, 14%, 65%, 1); }
+    .button5 { background: hsla(210, 11%, 60%, 1); }
+    .button6 { background: hsla(208, 7%, 55%, 1); }
+    .button7 { background: hsla(210, 9%, 50%, 1); }
+    .button8 { background: hsla(210, 10%, 45%, 1); }
+    .button9 { background: hsla(210, 11%, 40%, 1); }
+    .button10 { background: hsla(210, 11%, 35%, 1); }
+
+    /*Underline button rating*/
+    .grey-button::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+    }
+
+    p span.sign {
+        color: #002561;
+        font-weight: bold;
+    }
+
+    .grey-button:nth-child(1)::after {
+        background-color: red; /* Merah */
+    }
+    .grey-button:nth-child(2)::after {
+        background-color: red; /* Oranye */
+    }
+    .grey-button:nth-child(3)::after {
+        background-color: red; /* Kuning */
+    }
+    .grey-button:nth-child(4)::after {
+        background-color: red; /* Hijau */
+    }
+    .grey-button:nth-child(5)::after {
+        background-color: red; /* Biru */
+    }
+    .grey-button:nth-child(6)::after {
+        background-color: red; /* Ungu */
+    }
+    .grey-button:nth-child(7)::after {
+        background-color: gold; /* Coklat */
+    }
+    .grey-button:nth-child(8)::after {
+        background-color: gold; /* Pink */
+    }
+    .grey-button:nth-child(9)::after {
+        background-color: green; /* Ungu tua */
+    }
+    .grey-button:nth-child(10)::after {
+        background-color: green; /* Hitam */
+    }   
+
+    .privacy-policy {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <img src="https://www.garuda-indonesia.com/content/dam/garuda/offers/main-bidupgrade-id.jpg" class="image-header">
+        <div class="content">
+            
+            <p>Dear Mr./Ms. {{first_name}},</p>
+            <p>Thank you for choosing Garuda Indonesia for your recent flight. We hope you had a wonderful experience with us.</p>
+            <p>To further improve our services, we kindly request a few moments of your valuable time to complete a survey about your recent flight.</p>
+            How likely are you to recommend Garuda Indonesia to your family, friends, or colleagues based on your recent flight {{flight_number}} from {{departure_city}} to {{arrival_city}} on {{date_of_flight}}?</p>
+            <div class="label-container">
+                <div class="left-label">Extremely dissatisfied</div>
+                <div class="right-label">Extremely satisfied</div>                
+            </div>
+            <div class="button-container">
+                <a href="https://survey-passenger.garuda-indonesia.com/survey/post-flight?channel=email&id={{email}}&score=1&lang=id&fn={{flight_number}}&fd={{flight_date}}&ori={{departure_city}}&des={{arrival_city}}&cb={{cabin}}" class="grey-button button1" target="_blank">1</a>
+                <a href="https://survey-passenger.garuda-indonesia.com/survey/post-flight?channel=email&id={{email}}&score=2&lang=id&fn={{flight_number}}&fd={{flight_date}}&ori={{departure_city}}&des={{arrival_city}}&cb={{cabin}}" class="grey-button button2" target="_blank">2</a>
+                <a href="https://survey-passenger.garuda-indonesia.com/survey/post-flight?channel=email&id={{email}}&score=3&lang=id&fn={{flight_number}}&fd={{flight_date}}&ori={{departure_city}}&des={{arrival_city}}&cb={{cabin}}" class="grey-button button3" target="_blank">3</a>
+                <a href="https://survey-passenger.garuda-indonesia.com/survey/post-flight?channel=email&id={{email}}&score=4&lang=id&fn={{flight_number}}&fd={{flight_date}}&ori={{departure_city}}&des={{arrival_city}}&cb={{cabin}}" class="grey-button button4" target="_blank">4</a>
+                <a href="https://survey-passenger.garuda-indonesia.com/survey/post-flight?channel=email&id={{email}}&score=5&lang=id&fn={{flight_number}}&fd={{flight_date}}&ori={{departure_city}}&des={{arrival_city}}&cb={{cabin}}" class="grey-button button5" target="_blank">5</a>
+                <a href="https://survey-passenger.garuda-indonesia.com/survey/post-flight?channel=email&id={{email}}&score=6&lang=id&fn={{flight_number}}&fd={{flight_date}}&ori={{departure_city}}&des={{arrival_city}}&cb={{cabin}}" class="grey-button button6" target="_blank">6</a>
+                <a href="https://survey-passenger.garuda-indonesia.com/survey/post-flight?channel=email&id={{email}}&score=7&lang=id&fn={{flight_number}}&fd={{flight_date}}&ori={{departure_city}}&des={{arrival_city}}&cb={{cabin}}" class="grey-button button7" target="_blank">7</a>
+                <a href="https://survey-passenger.garuda-indonesia.com/survey/post-flight?channel=email&id={{email}}&score=8&lang=id&fn={{flight_number}}&fd={{flight_date}}&ori={{departure_city}}&des={{arrival_city}}&cb={{cabin}}" class="grey-button button8" target="_blank">8</a>
+                <a href="https://survey-passenger.garuda-indonesia.com/survey/post-flight?channel=email&id={{email}}&score=9&lang=id&fn={{flight_number}}&fd={{flight_date}}&ori={{departure_city}}&des={{arrival_city}}&cb={{cabin}}" class="grey-button button9" target="_blank">9</a>
+                <a href="https://survey-passenger.garuda-indonesia.com/survey/post-flight?channel=email&id={{email}}&score=10&lang=id&fn={{flight_number}}&fd={{flight_date}}&ori={{departure_city}}&des={{arrival_city}}&cb={{cabin}}" class="grey-button button10" target="_blank">10</a>
+            </div>
+            <p>Your feedback is important to us as we strive to exceed the expectations of our valued passengers.</p>
+            <p>Thank you for taking the time to complete the survey.</p>
+            <p>We look forward to welcoming you onboard again soon.</p>
+
+            <p>Best Regards,<br><span class="sign">Garuda Indonesia</span></p>
+
+            <div class="privacy-policy">
+                <h3>Privacy policy</h3>
+                <p>In order to comply with the new data protection law, we have adjusted our privacy policy, terms of use, and cookies policy. By continuing to use this website, you understand and agree to our updated <a href="https://www.garuda-indonesia.com/content/garuda/id/en/privacy-policy.html">privacy policy</a>, <a href="https://www.garuda-indonesia.com/content/garuda/id/en/contact/term-of-us.html">term of use</a>, and <a href="https://www.garuda-indonesia.com/content/garuda/id/en/contact/cookie-policy.html">cookie policy</a></p>
+            </div>
+        </div>        
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Your Garuda Indonesia. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
+
