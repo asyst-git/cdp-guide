@@ -44,4 +44,4 @@ Here are the recommended templates which can be inherited and used to create you
 1. Marketing Recipient Templates:
     - GarudaMiles Recipient Template ([EDM_marketing_recipient_YYYYMMDD.csv](./recipient_templates/EDM_marketing_recipient_YYYYMMDD.csv)).
 2. Transactional Recipieent Template:
-    - CX - Passenger Post-Flight Survey Recipient Template([EDM_pax_survey_YYYYMMDD.csv](./recipient_templates/EDM_pax_survey_YYYYMMDD.csv)).
+    - CX - Passenger Post-Flight Survey Recipient Template ([EDM_pax_survey_YYYYMMDD.csv](./recipient_templates/EDM_pax_survey_YYYYMMDD.csv)).
